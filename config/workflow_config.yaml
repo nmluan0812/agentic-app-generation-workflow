@@ -1,0 +1,36 @@
+# Workflow Configuration
+lovable:
+  api_key: "${LOVABLE_API_KEY}"  # Set via environment variable
+  base_url: "https://api.lovable.dev/v1"
+  timeout: 30
+
+vercel:
+  token: "${VERCEL_TOKEN}"  # Set via environment variable
+  team_id: null
+  base_url: "https://api.vercel.com"
+  timeout: 30
+
+github:
+  token: "${GITHUB_TOKEN}"  # Set via environment variable
+  base_url: "https://api.github.com"
+  timeout: 30
+
+stripe:
+  api_key: "${STRIPE_API_KEY}"  # Set via environment variable
+  base_url: "https://api.stripe.com/v1"
+  timeout: 30
+
+# Testing configuration (if using external services)
+testing:
+  timeout: 30
+
+# UI/UX configuration
+uiux:
+  timeout: 30
+
+# Orchestrator settings
+orchestrator:
+  # How often to send updates (in seconds)
+  update_interval: 15
+  # Whether to run in simulation mode (no actual API calls)
+  simulation_mode: true
